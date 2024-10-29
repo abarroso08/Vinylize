@@ -1,8 +1,8 @@
 ---
 title: "CGT 141 Project"
-author: "Alejandro Barroso"
+author: "Silvia Díez, Javier Fernández, Alejandro Barroso"
 date: "2024-10-27"
-output: html_document
+output: pdf_document
 ---
 
 # CGT 141 Project Development Report
@@ -28,22 +28,20 @@ For this project, we will create a fully functional, responsive website and a na
 
 The project folder structure is essential for efficient organization, debugging, and delivery. Below is the directory layout:
 
-``` plaintext
-[LastName]_Project.zip
-├── Documents
-│   └── PreProduction.pdf          # Pre-production documentation, mock-ups, etc.
-├── WWW                             # Web documents for the website
-│   ├── index.html                  # Homepage (starting point of the app)
-│   ├── other pages   
-│   ├── CSS
-│   │   └── style.css               # CSS for layout, design, and responsiveness
-│   ├── JS
-│   │   └── main.js                 # JavaScript files for interactivity
-│   ├── Images                      # Image assets (PNG, JPG, GIF)
-│   └── Other Pages                 # Additional pages (7 minimum)
-└── Mobile App
-    └── Project.apk                 # Compiled Android app file
-```
+-   **[Project.zip]**
+    -   **Documents**
+        -   `PreProduction.pdf` — Pre-production documentation, mock-ups, etc.
+    -   **WWW** — Web documents for the website
+        -   `index.html` — Homepage (starting point of the app)
+        -   **other pages** — Additional pages (7 minimum)
+        -   **CSS**
+            -   `style.css` — CSS for layout, design, and responsiveness
+        -   **JS**
+            -   `main.js` — JavaScript files for interactivity
+        -   **Images** — Image assets (PNG, JPG, GIF)
+        -   **assets** — Reusable page components (e.g., nav, footer, database connection files)
+    -   **Mobile App**
+        -   `Project.apk` — Compiled Android app file
 
 ------------------------------------------------------------------------
 
@@ -55,7 +53,7 @@ Vinylize is an interactive platform where users can create custom vinyl records 
 
 ### 2. Mock-up
 
-![](images/WhatsApp%20Image%202024-10-03%20at%2008.16.06%20(1).jpeg)
+![](images/MockUp.jpeg)
 
 ### 3. Project Development Checklist
 
