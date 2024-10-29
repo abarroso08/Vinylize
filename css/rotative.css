@@ -1,0 +1,82 @@
+/* CSS for rotative Vinyl */
+.rotative-container{
+     position: relative;
+     left: 10%;
+}
+.main-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: inherit;
+     height: inherit;
+}
+
+.square {
+     width: 50%;
+     height: inherit;
+     z-index: 1000;
+}
+
+.vinyl-container {
+     display: flex;
+     width: 50%;
+     height: inherit;
+     position: relative;
+     right: 25%;
+     animation: vinyl-rotation 5s infinite linear;
+     z-index: 10;
+}
+
+.disk-text{
+     position: absolute;
+     left: 50%;
+     top:5%;
+     transform: translate(-50%,0);
+     z-index:100;
+     color:#fff;
+     font-size: 50%;
+
+}
+.circle {
+     border-radius: 50%;
+     width: 40%;
+     height: 40%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 100;
+}
+
+.vinyl-right,
+.vinyl-left {
+     z-index: 10;
+}
+
+.vinyl-right {
+     transform: rotate(180deg);
+}
+
+@keyframes vinyl-rotation {
+     50% {
+          transform: rotate(180deg);
+     }
+
+     100% {
+          transform: rotate(360deg);
+     }
+}
+
+/* Neon gold pink */
+.gold-pink {
+     filter: invert(20%) sepia(80%) saturate(300%) hue-rotate(330deg);
+}
+
+/* Neon green */
+.neon-green {
+     filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(60deg);
+}
+
+.purple {
+     filter: invert(20%) sepia(100%) saturate(200%) hue-rotate(210deg);
+}
