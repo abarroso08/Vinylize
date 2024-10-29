@@ -90,6 +90,22 @@
                     </p>
                </div>
           </div>
+          <div>
+               <h3>Links to all pages:(Temporal)</h3>
+               <ul>
+
+                    
+                    <li><a href="buy.php">buy.php</a></li>
+                    <li><a href="design-station.php">design-station.php</a></li>
+                    <li><a href="saved-vinyls.php">saved-vinyls.php</a></li>
+                    <li><a href="select-artist.php">select-artist.php</a></li>
+                    <li><a href="select-color.php">select-color.php</a></li>
+                    <li><a href="select-engraving.php">select-engraving.php</a></li>
+                    <li><a href="README.md">README.md</a></li>
+                    <li><a href="Report.pdf">Report.pdf</a></li>
+               </ul>
+
+          </div>
      </div>
 
      <?php include "assets/footer.php" ?>
