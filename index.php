@@ -21,7 +21,7 @@
           </header>
 
           <!-- Examples -->
-          <div class="row w-90">
+          <div class="row w-100">
 
                <!-- Example 1 -->
                <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
@@ -47,7 +47,7 @@
                          Available in black, white and transparent<br>
                          30 minutes of music (15 min per side)<br>
                          Design your own cover &amp; labels<br>
-                         <strong><i class="fa fa-fw"></i> Free &amp; insured worldwide shipping</strong>
+                         <strong><i class="fa fa-fw"></i> Free &amp; insured worldwide shipping</strong>
                     </p>
                     <!-- Example button -->
                     <p style="text-align: center;">
