@@ -2,9 +2,12 @@
 <link rel="stylesheet" href="css/create.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
      <?php include "assets/nav.php" ?>
-     <h1>Design Station</h1>
+     <h1 class="text-center font-pacifico text-4xl md:text-5xl text-indigo-600 mt-4">
+    Design Station
+     </h1>
+
      <div class="create-container container d-flex  align-items-center justify-content-around">
      
 

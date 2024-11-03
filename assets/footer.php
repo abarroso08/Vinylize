@@ -1,7 +1,7 @@
-<footer class="footer mt-auto py-3 bg-dark">
+<footer class="footer mt-auto py-3 bg-dark text-center">
      <div class="container text-center">
-          <span class="text-muted">Crafted and developed by </span><a class="text-primary" href="#">Silvia Díez,Javier
-               Fernández,Alejandro Barroso</a></br>
+          <span class="text-muted">Crafted and developed by </span><a class="text-primary" href="#">Silvia Díez, Javier
+               Fernández, Alejandro Barroso</a></br>
           <span class="text-muted">&copy; 2024 All rights reserved.</span>
      </div>
 </footer>

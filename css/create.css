@@ -21,6 +21,47 @@
 
 h1{
      text-align: center;
-     font-family: 'Abril Fatface';
+     font-family: 'Pacifico', cursive;
      margin:8px;
 }
+
+h2{
+     text-align: center;
+     font-family: 'Pacifico', cursive;
+     margin-top:10px;
+}
+
+/* Customizing all .btn-primary buttons */
+.btn-primary {
+     background-color: #715da1; /* Custom background color */
+     border-color: #403164; /* Custom border color */
+     border-width: 3px;
+ }
+ 
+ .btn-primary:hover {
+     background-color: #403164; /* Hover color */
+     border-color: #403164;
+     border-width: 3px;
+ }
+ 
+ body {
+     background-color: #86878f; /* Change this to your desired color */
+ }
+
+ .video-background {
+     width: 100vw; /* Set the width to 100% of the viewport width */
+     height: 80vh; /* You can adjust this height as needed */
+     position: relative; /* Allows positioning of overlay elements */
+     left: 50%; /* Position from the left */
+     transform: translateX(-50%); /* Center the video */
+     margin-bottom: 5%;
+ }
+ 
+ .header {
+     padding: 0; /* Remove any padding */
+     margin: 0; /* Remove any margin */
+ }
+
+
+
+ 
