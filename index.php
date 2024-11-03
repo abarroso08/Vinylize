@@ -1,7 +1,6 @@
 <?php include "assets/head.php" ?>
 <link rel="stylesheet" href="css/create.css">
 <link rel="stylesheet" href="css/rotative.css">
-<link rel="stylesheet" href="css/main.css">
 
 </head>
 

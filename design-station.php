@@ -1,5 +1,7 @@
 <?php include "assets/head.php" ?>
 <link rel="stylesheet" href="css/create.css">
+<link rel="stylesheet" href="css/rotative.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -12,10 +14,10 @@
      
 
      <!-- Rotative vinyl -->
-     <div class="rotative-container" style="width:15vw;height:15vw">
-          <div class="main-container">
+     <div class="rotative-container-design" style="width:15vw;height:15vw">
+          <div class="main-container-design">
                <!-- Cover image -->
-               <div class="vinyl-container">
+               <div class="vinyl-container-design">
                     <p class="disk-text">Engraving</p>
                     <img src="images/vinyl-black.png" alt="Current Vinyl Design" class="vinyl-left">
                     <img src="images/kanye-circle.jpg" alt="" class="circle">
@@ -25,10 +27,10 @@
      </div>
 
      <!-- Rotative vinyl -->
-     <div class="rotative-container" style="width:30vw;height:30vw">
-          <div class="main-container">
+     <div class="rotative-container-design" style="width:30vw;height:30vw">
+          <div class="main-container-design">
                <!-- Cover image -->
-               <div class="vinyl-container">
+               <div class="vinyl-container-design">
                     <p class="disk-text">Design and Color</p>
                     <img src="images/vinyl-black.png" alt="Current Vinyl Design" class="vinyl-left gold-pink">
                     <img src="images/kanye-circle.jpg" alt="" class="circle">
@@ -38,10 +40,10 @@
      </div>
 
      <!-- Rotative vinyl -->
-     <div class="rotative-container" style="width:15vw;height:15vw">
-          <div class="main-container">
+     <div class="rotative-container-design" style="width:15vw;height:15vw">
+          <div class="main-container-design">
                <!-- Cover image -->
-               <div class="vinyl-container">
+               <div class="vinyl-container-design">
                     <p class="disk-text">Artist and album</p>
                     <img src="images/vinyl-black.png" alt="Current Vinyl Design" class="vinyl-left">
                     <img src="images/kanye-circle.jpg" alt="" class="circle">

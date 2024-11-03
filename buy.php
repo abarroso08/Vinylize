@@ -8,7 +8,7 @@
      include: añade los archivos nav.php y footer.php a este código literalmente como si hiciera un copy/paste.-->
      
      <h1 class="text-center font-pacifico text-4xl md:text-5xl text-indigo-600 mt-4">
-    Buy Your Vynil
+    Buy Your Vinyl
      </h1>
 
 

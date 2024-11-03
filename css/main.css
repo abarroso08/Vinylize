@@ -1,3 +1,11 @@
-.navigation {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+.navbar {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More prominent shadow */
+}
+
+.nav-link i {
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2); /* Adjust scale as needed */
 }

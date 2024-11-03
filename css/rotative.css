@@ -80,3 +80,60 @@
 .purple {
      filter: invert(20%) sepia(100%) saturate(200%) hue-rotate(210deg);
 }
+
+.rotative-container-design {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 15vw; /* Adjust size as needed */
+     height: 15vw;
+ }
+ 
+ .main-container-design {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .vinyl-container-design {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .vinyl-container-design img.vinyl-left { 
+     width: 100%; /* Make the vinyl image fit the container */
+     animation: vinyl-rotation 5s infinite linear; /* Apply rotation here */
+     transform-origin: center center; /* Rotate around the center */
+ }
+ 
+ .disk-text {
+     position: absolute;
+     top: 5%;
+     left: 50%;
+     transform: translateX(-50%);
+     color: #fff;
+     font-size: 1.2em;
+     z-index: 100;
+     text-align: center;
+ }
+ 
+ .circle {
+     border-radius: 50%;
+     width: 40%;
+     height: 40%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 100;
+ }
+ 
+ 
+ 
