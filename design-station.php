@@ -14,6 +14,7 @@
      
 
      <!-- Rotative vinyl -->
+     <a href="select-engraving.php" style="display: inline-block;">
      <div class="rotative-container-design" style="width:15vw;height:15vw">
           <div class="main-container-design">
                <!-- Cover image -->
@@ -27,6 +28,7 @@
      </div>
 
      <!-- Rotative vinyl -->
+     <a href="select-color.php" style="display: inline-block;">
      <div class="rotative-container-design" style="width:30vw;height:30vw">
           <div class="main-container-design">
                <!-- Cover image -->
@@ -40,6 +42,7 @@
      </div>
 
      <!-- Rotative vinyl -->
+     <a href="select-artist.php" style="display: inline-block;">
      <div class="rotative-container-design" style="width:15vw;height:15vw">
           <div class="main-container-design">
                <!-- Cover image -->
