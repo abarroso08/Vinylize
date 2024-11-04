@@ -88,6 +88,11 @@
      justify-content: center;
      width: 15vw; /* Adjust size as needed */
      height: 15vw;
+     transition: transform 0.4s ease; /* Smooth transition for scaling and rotating */
+ }
+
+ .rotative-container-design:hover {
+     transform: scale(1.15) rotate(10deg); /* Scale up and add slight rotation on hover */
  }
  
  .main-container-design {

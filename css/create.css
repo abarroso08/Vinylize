@@ -55,13 +55,17 @@ h2{
      left: 50%; /* Position from the left */
      transform: translateX(-50%); /* Center the video */
      margin-bottom: 5%;
+     z-index: 0;
  }
  
  .header {
      padding: 0; /* Remove any padding */
      margin: 0; /* Remove any margin */
+     z-index: 1;
  }
 
+ .header-content {
+     position: relative;
+     z-index: 1;
+ }
 
-
- 

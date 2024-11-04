@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 design-station-page">
      <?php include "assets/nav.php" ?>
      <h1 class="text-center font-pacifico text-4xl md:text-5xl text-indigo-600 mt-4">
     Design Station
@@ -56,4 +56,5 @@
      </div>
      
      </div>
+</body>
      <?php include "assets/footer.php" ?>

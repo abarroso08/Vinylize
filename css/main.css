@@ -1,11 +1,20 @@
-.navbar {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More prominent shadow */
-}
-
-.nav-link i {
+.nav-link {
     transition: transform 0.2s ease;
 }
 
-.nav-link:hover i {
-    transform: scale(1.2); /* Adjust scale as needed */
+.nav-link:hover {
+    transform: scale(1.15); /* Adjust scale as needed */
 }
+
+.navbar {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More prominent shadow */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* High z-index to bring navbar above all content */
+}
+
+
+
+
