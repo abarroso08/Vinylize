@@ -74,7 +74,7 @@ h2{
      position: fixed;
      float: left;
      top: 4rem;
-     left: 0;
+     left: 0rem;
      width: 12rem;
      padding: 1rem;
      background-color: #f9fafb;
@@ -92,7 +92,7 @@ h2{
      position: fixed;
      float: right;
      top: 4rem;
-     right: 0;
+     right: 0rem;
      width: 12rem;
      padding: 1rem;
      background-color: #f9fafb;
@@ -100,4 +100,3 @@ h2{
      height: calc(100vh - 4rem); /* Full height minus top padding */
      overflow-y: auto; /* Scroll if content overflows */
  } 
- 
