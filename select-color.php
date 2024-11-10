@@ -1,5 +1,6 @@
 <?php include "assets/head.php" ?>
 <link rel="stylesheet" href="css/create.css">
+<link rel="stylesheet" href="css/rotative.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
