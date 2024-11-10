@@ -69,20 +69,38 @@ h2{
      z-index: 1;
  }
 
-.color-buttons button,
-.finish-buttons button {
-    padding: 0.5rem 1rem;
-    margin-right: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    color:white;
-    cursor: pointer;
-}
-
-.finish-buttons button.active {
-    background-color: #4a5568; /* Gray for default active Plain button */
-}
-
-.finish-buttons button:not(.active) {
-    background-color: #a0aec0; /* Lighter gray for inactive */
-}
+/* Fixed navigation column on the left */
+.nav-column {
+     position: fixed;
+     top: 4rem; /* Adjust as needed for spacing from top */
+     left: 0;
+     width: 12rem; /* Width of the navigation column */
+     padding: 1rem;
+     background-color: #f9fafb; /* Light gray background */
+     border-right: 1px solid #e2e8f0; /* Optional border for separation */
+ }
+ 
+ /* Content area with margin to avoid overlap with nav column */
+ .content-area {
+     margin-left: 14rem; /* Adds space on the left to accommodate the fixed column */
+ }
+ 
+ /* Button styling */
+ .color-buttons button,
+ .finish-buttons button {
+     padding: 0.5rem 1rem;
+     margin-right: 0.5rem;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     cursor: pointer;
+ }
+ 
+ .finish-buttons button.active {
+     background-color: #4a5568; /* Gray for default active Plain button */
+ }
+ 
+ .finish-buttons button:not(.active) {
+     background-color: #a0aec0; /* Lighter gray for inactive */
+ }
+ 
