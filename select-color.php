@@ -6,18 +6,18 @@
      <?php include "assets/nav.php" ?>
      
      <div class="container mx-auto mt-4 flex">
-         <!-- Left Side: Navigation and Color Selection -->
-         <div class="w-1/2 p-4">
-             <!-- Navigation Column -->
-             <div class="mb-6">
-                 <p class="text-gray-500">Stations:</p>
-                 <ul class="list-disc pl-4">
-                     <li class="font-bold text-indigo-800">Select Your Color</li>
-                     <li><a href="select-artist.php" class="text-indigo-600">Select Artist</a></li>
-                     <li><a href="select-engraving.php" class="text-indigo-600">Select Engraving</a></li>
-                 </ul>
-             </div>
-             
+         <!-- Left Side: Fixed Navigation Column -->
+         <div class="nav-column">
+             <p class="text-gray-500">Stations:</p>
+             <ul class="list-disc pl-4">
+                 <li class="font-bold text-indigo-800">Select Your Color</li>
+                 <li><a href="select-artist.php" class="text-indigo-600">Select Artist</a></li>
+                 <li><a href="select-engraving.php" class="text-indigo-600">Select Engraving</a></li>
+             </ul>
+         </div>
+         
+         <!-- Right Side Content Area -->
+         <div class="content-area ml-56 p-4">
              <!-- Color Selection Title -->
              <h2 class="text-2xl font-semibold mb-2">Choose your color</h2>
              <div class="color-buttons mb-4">
@@ -29,19 +29,19 @@
 
              <!-- Marble Finish Selection -->
              <h2 class="text-2xl font-semibold mb-2">Want a marble finish?</h2>
-             <div class="finish-buttons">
+             <div class="finish-buttons mb-6">
                  <button class="finish-btn" id="marble">Marble</button>
                  <button class="finish-btn active" id="plain">Plain</button>
              </div>
-         </div>
-         
-         <!-- Right Side: Vinyl and Album Cover Display -->
-         <div class="w-1/2 p-4 flex items-center justify-center">
-             <div class="relative">
-                 <!-- Big Circle (Vinyl) -->
-                 <img id="vinyl-display" src="images/default-vinyl.jpg" alt="Vinyl" class="w-64 h-64 rounded-full object-cover">
-                 <!-- Small Circle (Album Cover) Positioned on Top -->
-                 <img src="images/default-album.jpg" alt="Album Cover" class="w-16 h-16 rounded-full object-cover absolute top-4 right-4">
+
+             <!-- Vinyl and Album Cover Display -->
+             <div class="flex items-center justify-center">
+                 <div class="relative">
+                     <!-- Big Circle (Vinyl) -->
+                     <img id="vinyl-display" src="images/default-vinyl.jpg" alt="Vinyl" class="w-64 h-64 rounded-full object-cover">
+                     <!-- Small Circle (Album Cover) Positioned on Top -->
+                     <img src="images/default-album.jpg" alt="Album Cover" class="w-16 h-16 rounded-full object-cover absolute top-4 right-4">
+                 </div>
              </div>
          </div>
      </div>
