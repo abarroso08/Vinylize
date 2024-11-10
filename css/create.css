@@ -68,14 +68,14 @@ h2{
      position: relative;
      z-index: 1;
  }
- 
+
  .color-buttons button,
 .finish-buttons button {
     padding: 0.5rem 1rem;
     margin-right: 0.5rem;
     border: none;
     border-radius: 5px;
-    color: white;
+    color:white;
     cursor: pointer;
 }
 
