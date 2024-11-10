@@ -12,9 +12,9 @@
              <div class="mb-6">
                  <p class="text-gray-500">Stations:</p>
                  <ul class="list-disc pl-4">
+                     <li class="font-bold text-indigo-800">Select Your Color</li>
                      <li><a href="select-artist.php" class="text-indigo-600">Select Artist</a></li>
                      <li><a href="select-engraving.php" class="text-indigo-600">Select Engraving</a></li>
-                     <li class="font-bold text-indigo-800">Select Color</li>
                  </ul>
              </div>
              
