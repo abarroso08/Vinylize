@@ -102,3 +102,34 @@ h2{
      }
  }
  
+/* Fixed navigation column on the left */
+.nav-column {
+     position: fixed;
+     float: left;
+     top: 4rem;
+     left: 0rem;
+     width: 12rem;
+     padding: 1rem;
+     background-color: #f9fafb;
+     border-right: 1px solid #e2e8f0;
+     height: calc(100vh - 4rem); /* Full height minus top padding */
+     overflow-y: auto; /* Scroll if content overflows */
+ }
+ 
+ /* Content area with margin to avoid overlap with nav column */
+ .content-area-station {
+     margin-left: 14rem; /* Adds space on the left to accommodate the fixed column */
+ }
+ 
+ .vinyl-view{
+     position: fixed;
+     float: right;
+     top: 4rem;
+     right: 0rem;
+     width: 12rem;
+     padding: 1rem;
+     background-color: #f9fafb;
+     border-right: 1px solid #e2e8f0;
+     height: calc(100vh - 4rem); /* Full height minus top padding */
+     overflow-y: auto; /* Scroll if content overflows */
+ } 
