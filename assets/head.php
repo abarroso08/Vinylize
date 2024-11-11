@@ -17,7 +17,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/rotative.css">
-     
+
      <style>
           :root {
                --primary: #fff;

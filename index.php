@@ -94,21 +94,56 @@
                </div>
           </div>
           <div>
-               <h3>Links to all pages: (Temporal)</h3>
-               <ul>
+               <!-- Who are we? -->
+               <div class="section who-we-are">
+                    <h2>Who Are We?</h2>
+                    <p>
+                         We are a small business devoted to crafting high-quality custom vinyl records,
+                         driven by our passion for music on physical mediums. Each piece is created from scratch,
+                         using premium materials sourced from trusted providers to deliver an exceptional listening experience.
+                    </p>
+               </div>
 
-                    
-                    <li><a href="buy.php">buy.php</a></li>
-                    <li><a href="design-station.php">design-station.php</a></li>
-                    <li><a href="saved-vinyls.php">saved-vinyls.php</a></li>
-                    <li><a href="select-artist.php">select-artist.php</a></li>
-                    <li><a href="select-color.php">select-color.php</a></li>
-                    <li><a href="select-engraving.php">select-engraving.php</a></li>
-                    <li><a href="README.md">README.md</a></li>
-                    <li><a href="Report.pdf">Report.pdf</a></li>
-               </ul>
+               <!-- Our Mission -->
+               <div class="section our-mission">
+                    <h2>Our Mission</h2>
+                    <p>
+                         Our initiative was inspired during a home gathering,
+                         where we realized that the warmth of classic vinyl music had quietly faded into the background.
+                         Since then, our mission has been to revive this almost-forgotten craft, bringing that nostalgic,
+                         timeless experience to those who crave what modern music formats simply can’t replicate.
+                    </p>
+               </div>
+
+               <!-- Creation Process -->
+               <div class="section creation-process">
+                    <h2>Creation Process</h2>
+                    <p>
+                         Our process begins by partnering with trusted suppliers who provide us with all the essential materials
+                         to craft high-quality vinyl records. These include high-grade vinyl discs, precision-cut lacquer masters,
+                         durable protective sleeves, and eco-friendly packaging materials. Once we have everything,
+                         we meticulously create each vinyl, ensuring every detail meets our standards of quality and authenticity.
+                    </p>
+               </div>
+
 
           </div>
-     </div>
+          <h3>Links to all pages: (Temporal)</h3>
+          <ul>
 
-     <?php include "assets/footer.php" ?>
+
+               <li><a href="buy.php">buy.php</a></li>
+               <li><a href="design-station.php">design-station.php</a></li>
+               <li><a href="saved-vinyls.php">saved-vinyls.php</a></li>
+               <li><a href="select-artist.php">select-artist.php</a></li>
+               <li><a href="select-color.php">select-color.php</a></li>
+               <li><a href="select-engraving.php">select-engraving.php</a></li>
+               <li><a href="README.md">README.md</a></li>
+               <li><a href="Report.pdf">Report.pdf</a></li>
+          </ul>
+
+     </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+<?php include "assets/footer.php" ?>
