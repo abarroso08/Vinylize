@@ -1,135 +1,134 @@
-.create-container{
-     width: 100vw;
-     height: 85vh;
+.create-container {
+  width: 100vw;
+  height: 85vh;
 }
 
-.vinyl-container,.rotative-container{
-     position: static;
+.vinyl-container,
+.rotative-container {
+  position: static;
 }
 
 .vinyl-container {
-     width: 100%;
-     animation: none;
-     transform: rotate(0deg);
+  width: 100%;
+  animation: none;
+  transform: rotate(0deg);
 }
-.disk-text{
-     font-size: 100%;
-     text-align: center;
-     font-family: 'Abril Fatface';
-
-}
-
-h1{
-     text-align: center;
-     font-family: 'Pacifico', cursive;
-     margin:8px;
+.disk-text {
+  font-size: 100%;
+  text-align: center;
+  font-family: "Abril Fatface";
 }
 
-h2{
-     text-align: center;
-     font-family: 'Pacifico', cursive;
-     margin-top:10px;
+h1 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  margin: 8px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  margin-top: 10px;
 }
 
 /* Customizing all .btn-primary buttons */
 .btn-primary {
-     background-color: #715da1; /* Custom background color */
-     border-color: #403164; /* Custom border color */
-     border-width: 3px;
- }
- 
- .btn-primary:hover {
-     background-color: #403164; /* Hover color */
-     border-color: #403164;
-     border-width: 3px;
- }
- 
- body {
-     background-color: #86878f; /* Change this to your desired color */
- }
+  background-color: #715da1; /* Custom background color */
+  border-color: #403164; /* Custom border color */
+  border-width: 3px;
+}
 
- .video-background {
-     width: 100vw; /* Set the width to 100% of the viewport width */
-     height: 80vh; /* You can adjust this height as needed */
-     position: relative; /* Allows positioning of overlay elements */
-     left: 50%; /* Position from the left */
-     transform: translateX(-50%); /* Center the video */
-     margin-bottom: 5%;
-     z-index: 0;
- }
- 
- .header {
-     padding: 0; /* Remove any padding */
-     margin: 0; /* Remove any margin */
-     z-index: 1;
- }
+.btn-primary:hover {
+  background-color: #403164; /* Hover color */
+  border-color: #403164;
+  border-width: 3px;
+}
 
- .header-content {
-     position: relative;
-     z-index: 1;
- }
+body {
+  background-color: #86878f; /* Change this to your desired color */
+}
 
- .section {
-     opacity: 0;
-     transform: translateX(-20px);
-     transition: opacity 0.8s ease, transform 0.8s ease;
-     
- }
+.video-background {
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: 80vh; /* You can adjust this height as needed */
+  position: relative; /* Allows positioning of overlay elements */
+  left: 50%; /* Position from the left */
+  transform: translateX(-50%); /* Center the video */
+  margin-bottom: 5%;
+  z-index: 0;
+}
 
- .section.who-we-are {
-     animation: fadeIn 1.5s ease forwards;
-     animation-delay: 0.3s;
- }
- 
- .section.our-mission {
-     animation: fadeIn 1.5s ease forwards;
-     animation-delay: 0.6s;
- }
- 
- .section.creation-process {
-     animation: fadeIn 1.5s ease forwards;
-     animation-delay: 0.9s;
- }
- 
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-         transform: translateX(-20px);
-     }
-     to {
-         opacity: 1;
-         transform: translateX(0);
-     }
- }
- 
+.header {
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.who-we-are {
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.section.our-mission {
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.section.creation-process {
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Fixed navigation column on the left */
 .nav-column {
-     position: fixed;
-     float: left;
-     top: 4rem;
-     left: 0rem;
-     width: 12rem;
-     padding: 1rem;
-     background-color: #f9fafb;
-     border-right: 1px solid #e2e8f0;
-     height: calc(100vh - 4rem); /* Full height minus top padding */
-     overflow-y: auto; /* Scroll if content overflows */
- }
- 
- /* Content area with margin to avoid overlap with nav column */
- .content-area-station {
-     margin-left: 14rem; /* Adds space on the left to accommodate the fixed column */
- }
- 
- .vinyl-view{
-     position: fixed;
-     float: right;
-     top: 4rem;
-     right: 0rem;
-     width: 12rem;
-     padding: 1rem;
-     background-color: #f9fafb;
-     border-right: 1px solid #e2e8f0;
-     height: calc(100vh - 4rem); /* Full height minus top padding */
-     overflow-y: auto; /* Scroll if content overflows */
- } 
+  position: fixed;
+  float: left;
+  top: 4rem;
+  left: 0rem;
+  width: 12rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-right: 1px solid #e2e8f0;
+  height: calc(100vh - 4rem); /* Full height minus top padding */
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+/* Content area with margin to avoid overlap with nav column */
+.content-area-station {
+  margin-left: 14rem; /* Adds space on the left to accommodate the fixed column */
+}
+
+.vinyl-view {
+  position: fixed;
+  float: right;
+  top: 4rem;
+  right: 0rem;
+  width: 12rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-right: 1px solid #e2e8f0;
+  height: calc(100vh - 4rem); /* Full height minus top padding */
+  overflow-y: auto; /* Scroll if content overflows */
+}
