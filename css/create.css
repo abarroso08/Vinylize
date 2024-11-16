@@ -22,7 +22,8 @@
 h1 {
   text-align: center;
   font-family: "Pacifico", cursive;
-  margin: 8px;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove padding if any */
 }
 
 h2 {
@@ -131,4 +132,26 @@ body {
   border-right: 1px solid #e2e8f0;
   height: calc(100vh - 4rem); /* Full height minus top padding */
   overflow-y: auto; /* Scroll if content overflows */
+}
+
+.create-container {
+  display: flex; /* Arrange child elements horizontally */
+  width: 100vw;
+  height: 85vh;
+  gap: 1rem; /* Add spacing between child elements */
+}
+
+.nav-column {
+  position: sticky; /* Keeps it in place while scrolling */
+  margin-top: 0; /* Aligns it with the top of the viewport */
+  margin-bottom: 10px; /* Adds space at the bottom */
+  left: 0;
+  width: 12rem;
+  padding: 1rem;
+  background-color: #f9fafb; /* Light background for contrast */
+  border-right: 1px solid #e2e8f0; /* Subtle border for separation */
+  height: calc(100vh - 4rem); /* Full height minus any offsets */
+  overflow-y: auto; /* Add scrolling for overflow content */
+  z-index: 20; /* Higher z-index to ensure it appears above other elements */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
 }
