@@ -10,6 +10,7 @@ define('DB_NAME', 'u803318305_vinylize');
 try {
      $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
      // Set the PDO error mode to exception
+     
      $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
      $GLOBALS['conexion'] = $pdo;
 } catch (PDOException $error) {
