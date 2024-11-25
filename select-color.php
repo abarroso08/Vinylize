@@ -75,7 +75,6 @@
      </div>
      <?php include "assets/footer.php" ?>
 
-     <script src="js/color-selection.js"></script>
      <script>
           // JavaScript to handle dynamic class changes based on selected color
           

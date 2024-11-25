@@ -3,10 +3,10 @@ $color = htmlspecialchars($_GET['color']);
 $texture = htmlspecialchars($_GET['texture']);
 
 
-define('DB_SERVER', 'localhost:3306');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'AlBaBu208?');
-define('DB_NAME', 'vinylize');
+define('DB_SERVER', '127.0.0.1:3306');
+define('DB_USERNAME', 'u803318305_vinylize');
+define('DB_PASSWORD', 'Vinylize141');
+define('DB_NAME', 'u803318305_vinylize');
 try {
      $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
      // Set the PDO error mode to exception
