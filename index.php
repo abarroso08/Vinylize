@@ -34,7 +34,7 @@
                               <!-- Cover image -->
                               <img src="images/sabrina.jpg" class="square"></img>
                               <div class="vinyl-container">
-                                   <p class="disk-text">Your name</p>
+                                   <p class="disk-text">Engraving</p>
                                    <img src="images/vinyl-black.png" alt="Current Vinyl Design" class="vinyl-left purple">
                                    <img src="images/sabrina.jpg" alt="" class="circle">
                               </div>
@@ -67,10 +67,10 @@
                               <img src="images/kanye-cover.jpg" class="square"></img>
                               <div class="vinyl-container">
                                    <!-- vinyl name -->
-                                   <p class="disk-text">Your Name</p>
+                                   <p class="disk-text">Engraving</p>
                                    <img src="images/half-vinyl.png" alt="Current Vinyl Design" class="vinyl-left gold-pink w-50">
                                    <!-- Circle picture in disk -->
-                                   <img src="images/kanye-circle.jpg" alt="" class="circle">
+                                   <img src="images/college.jpg" alt="" class="circle">
                                    <img src="images/half-vinyl.png" alt="Current Vinyl Design" class="vinyl-right gold-pink w-50">
                               </div>
 

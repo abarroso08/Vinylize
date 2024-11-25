@@ -15,6 +15,14 @@
     z-index: 10; /* High z-index to bring navbar above all content */
 }
 
+@media (max-width: 767.98px) { /* Small devices (smaller than md) */
+    .responsive-height {
+        height: 200vh; /* Auto height for small devices */
+    }
+}
 
-
-
+@media (min-width: 768px) { /* Medium devices and above */
+    .responsive-height {
+        height: 85vh; /* 85% of viewport height for larger devices */
+    }
+}
