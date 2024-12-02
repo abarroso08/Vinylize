@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md text-dark shadow">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-md text-dark shadow"> 
+    <div class="container-fluid justify-content-center">
         <a class="navbar-brand text-dark" href="index.php">
-            <span style="font-weight: bold; font-family: Abril Fateface; font-size:30px; color: #000000; z-index: 100;">Vinylize</span>
+            <span style="font-weight: bold; font-family: 'Roboto', sans-serif; font-size:30px; color: #333333;">Vinylize</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

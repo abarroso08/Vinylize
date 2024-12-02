@@ -1,5 +1,5 @@
 -- Create the database
-CREATE SCHEMA vinylize;
+CREATE DATABASE vinylize;
 -- Use the database
 USE vinylize;
 -- Create the Artists table
@@ -15,4 +15,13 @@ CREATE TABLE Albums (
      CoverImage VARCHAR(255) NOT NULL,
      -- URL or file path for the album cover image
      FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID) ON DELETE CASCADE
+);
+
+-- Create the SavedVinyls table to store user vinyl saves
+CREATE TABLE SavedVinyls (
+    SavedVinylID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT NOT NULL,
+    AlbumID INT NOT NULL,
+    SaveDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (AlbumID) REFERENCES Albums(AlbumID) ON DELETE CASCADE
 );

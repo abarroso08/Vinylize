@@ -18,7 +18,7 @@
 
                <!-- Content Overlay -->
                <div class="header-content text-center text-white w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="position:absolute; right:0; left:0; top:0; bottom:0;">
-                    <h1 style="font-size:100px;font-family:'Abril Fatface', cursive;">Vinylize</h1>
+                    <h1 style="font-size:100px;font-family:'Roboto', cursive;">Vinylize</h1>
                     <p>Your personalized vinyl in minutes</p>
                </div>
           </header>
@@ -32,7 +32,7 @@
                     <div class="rotative-container" style="width:300px;height:150px">
                          <div class="main-container">
                               <!-- Cover image -->
-                              <img src="images/sabrina.jpg" class="square"></img>
+                              <img src="images/sabrina.jpg" class="square shadow-effect"></img>
                               <div class="vinyl-container">
                                    <p class="disk-text">Engraving</p>
                                    <img src="images/vinyl-black.png" alt="Current Vinyl Design" class="vinyl-left purple">
@@ -64,7 +64,7 @@
                     <div class="rotative-container" style="width:300px;height:150px">
                          <div class="main-container">
                               <!-- Cover image -->
-                              <img src="images/kanye-cover.jpg" class="square"></img>
+                              <img src="images/kanye-cover.jpg" class="square shadow-effect"></img>
                               <div class="vinyl-container">
                                    <!-- vinyl name -->
                                    <p class="disk-text">Engraving</p>
@@ -125,23 +125,7 @@
                          we meticulously create each vinyl, ensuring every detail meets our standards of quality and authenticity.
                     </p>
                </div>
-
-
           </div>
-          <h3>Links to all pages: (Temporal)</h3>
-          <ul>
-
-
-               <li><a href="buy.php">buy.php</a></li>
-               <li><a href="design-station.php">design-station.php</a></li>
-               <li><a href="saved-vinyls.php">saved-vinyls.php</a></li>
-               <li><a href="select-artist.php">select-artist.php</a></li>
-               <li><a href="select-color.php">select-color.php</a></li>
-               <li><a href="select-engraving.php">select-engraving.php</a></li>
-               <li><a href="README.md">README.md</a></li>
-               <li><a href="Report.pdf">Report.pdf</a></li>
-          </ul>
-
      </div>
      </div>
      <script src="script.js"></script>

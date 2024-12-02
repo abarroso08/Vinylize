@@ -1,9 +1,20 @@
+.navbar {
+    background-color: #b4bac1; 
+}
+
+.navbar-brand {
+    color: #000000; /* Dark grey for brand text */
+    font-family: 'Roboto', sans-serif; /* Roboto font for brand text */
+}
+
 .nav-link {
+    color: #555555; /* Medium grey for nav links */
     transition: transform 0.2s ease;
 }
 
 .nav-link:hover {
     transform: scale(1.15); /* Adjust scale as needed */
+    color: #000000; /* Dark grey on hover */
 }
 
 .navbar {

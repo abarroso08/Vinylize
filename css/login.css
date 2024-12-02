@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   z-index: 999;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Open Sans", cursive;
   text-align: center;
   padding: 60px 32px;
   width: 370px;
@@ -34,7 +34,7 @@
   color: #51455d;
   font-size: 33px;
   margin: 0 0 35px 0;
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .field {
@@ -59,7 +59,7 @@
   outline: none;
   color: #51455d;
   font-size: 16px;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .space {
@@ -74,7 +74,7 @@
   color: #51455d;
   display: none;
   cursor: pointer;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .pass-key:valid ~ .show {
@@ -89,7 +89,7 @@
 .pass a {
   color: white;
   text-decoration: none;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .pass:hover a {
@@ -104,7 +104,7 @@
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .field input[type="submit"]:hover {
@@ -114,7 +114,7 @@
 .login {
   color: white;
   margin: 20px 0;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .links {
@@ -159,13 +159,13 @@ i span {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 16px;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .signup {
   font-size: 15px;
   color: white;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .signup a {

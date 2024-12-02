@@ -16,19 +16,19 @@
 .disk-text {
   font-size: 100%;
   text-align: center;
-  font-family: "Abril Fatface";
+  font-family: "Jost", cursive;
 }
 
 h1 {
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: "Jost", cursive;
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove padding if any */
 }
 
 h2 {
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: "Jost", cursive;
   margin-top: 10px;
 }
 
@@ -154,4 +154,31 @@ body {
   overflow-y: auto; /* Add scrolling for overflow content */
   z-index: 20; /* Higher z-index to ensure it appears above other elements */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+}
+
+.section {
+  background-color: #B4BAC1;  /* Background color for each paragraph container */
+  padding: 20px;  /* Add some padding for a more comfortable layout */
+  margin-left: 10%;  /* Adds margin to the left */
+  margin-right: 10%;  /* Adds margin to the right */
+  margin-bottom: 10px;  /* Adds margin at the bottom */
+  border-radius: 0px;  /* Optional: Adds rounded corners for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /* Optional: Adds a soft shadow around the container */
+}
+
+.section h2 {
+  text-align: center;  /* Center-align the section titles */
+  font-size: 1.8em;  /* Make titles stand out */
+  margin-bottom: 10px;  /* Add some space below the titles */
+}
+
+.section p {
+  font-size: 1em;  /* Adjust text size for better readability */
+  line-height: 1.6;  /* Increase line height for better text spacing */
+  color: #333;  /* Dark grey text color for better contrast */
+}
+
+/* Add bottom margin to the vinyl record containers */
+.col-12.col-sm-6 {
+  margin-bottom: 35px;  /* Adjust this value for desired space between rows */
 }
