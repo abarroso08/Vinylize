@@ -107,7 +107,7 @@
 
 /* Gold pink */
 .bg-pink {
-     filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(50deg);
+     filter: invert(20%) sepia(80%) saturate(300%) hue-rotate(330deg);
 }
 .bg-black{
     background:url('../images/vinyl-black.png');
