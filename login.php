@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 
-<?php include "assets/head.php" ?>
+<?php 
+include "assets/head.php";
+session_start(); // Start or resume the session
+
+// Retrieve the URL from GET or fallback to default
+$url = isset($_GET['url']) ? trim($_GET['url']) : 'index.php';
+$url = filter_var($url, FILTER_SANITIZE_URL); // Sanitize the URL for safety
+
+// Check if user is already logged in
+if (isset($_SESSION['user_id'])) {
+    // Redirect to the specified URL
+    header("Location: $url");
+    exit;
+}
+?>
 <link rel="stylesheet" href="css/create.css">
 
 <body>
@@ -10,14 +23,14 @@
     <div class="bg-img">
         <div class="content">
             <header>Login to Vinilyze!</header>
-            <form action="#">
+            <form action="checkLogin.php?url=<?php echo urlencode($url); ?>" method="POST">
                 <div class="field">
                     <span class="fa fa-user"></span>
-                    <input type="text" required placeholder="Email or Phone">
+                    <input type="text" name="email_or_phone" required placeholder="Email or Phone">
                 </div>
                 <div class="field space">
                     <span class="fa fa-lock"></span>
-                    <input type="password" class="pass-key" required placeholder="Password">
+                    <input type="password" class="pass-key" name="password" required placeholder="Password">
                     <span class="show">SHOW</span>
                 </div>
                 <div class="pass">
@@ -27,20 +40,9 @@
                     <input type="submit" value="LOGIN">
                 </div>
             </form>
-            <div class="login">
-                Or login with
-            </div>
-            <div class="links">
-                <div class="facebook">
-                    <i class="fab fa-facebook-f"><span>Facebook</span></i>
-                </div>
-                <div class="instagram">
-                    <i class="fab fa-instagram"><span>Instagram</span></i>
-                </div>
-            </div>
             <div class="signup">
-                Don't have account?
-                <a href="#">Signup Now</a>
+                Don't have an account?
+                <a href="register.php">Signup Now</a>
             </div>
         </div>
     </div>

@@ -9,9 +9,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
+                <?php
+                session_start();
+                if (!isset($_SESSION['user_id'])): ?> <!-- User not logged in -->
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="login.php"><i class="bi bi-person-fill"></i></a>
+                    <a class="nav-link text-dark" href="login.php"><i class="bi bi-person-fill"></i> Log In</a>
                 </li>
+                <?php else: ?> <!-- User is logged in -->
+                <li class="nav-item">
+                    <a class="btn btn-danger btn-sm" href="logout.php">Logout</a>
+                </li>
+                <?php endif; ?>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="saved-vinyls.php"><i class="fas fa-save"></i></a>
                 </li>
