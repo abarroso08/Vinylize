@@ -13,4 +13,4 @@ Key Highlights:
 
 > *Note: Vinylize requires a modern browser for optimal performance. Best viewed on Chrome, Firefox, or Safari.*
 
-*See the current development of* [Vinylize](https://red-nightingale-329659.hostingersite.com/)
+*See the current development of* [Vinylize](vinylize.store)
