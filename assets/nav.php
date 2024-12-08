@@ -17,7 +17,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="logout.php">Logout</a>
                 </li>
-                <?php endif; ?>
                 <li class="nav-item">
     <a class="nav-link text-dark" href="design-station.php"><i class="fas fa-plus"></i></a>
 </li>
