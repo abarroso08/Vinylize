@@ -23,4 +23,4 @@ try {
     echo json_encode(["error" => $e->getMessage()]);
     exit; // Stop execution if the database connection fails
 }
-?>
+?> 
