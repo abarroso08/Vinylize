@@ -13,4 +13,4 @@ Key Highlights:
 
 > *Note: Vinylize requires a modern browser for optimal performance. Best viewed on Chrome, Firefox, or Safari.*
 
-*See the current development of* [Vinylize](vinylize.store)
+*See the current development of* [Vinylize](https://vinylize.store/)
