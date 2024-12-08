@@ -39,79 +39,90 @@ try {
     $GLOBALS['error'] = $error;
     die("ERROR: No se pudo conectar. " . $error->getMessage());
 }
-
-$stmt = $conexion->prepare("SELECT * FROM `artists` ORDER BY ArtistName ASC;");
+$stmt = $conexion->prepare("SELECT * FROM `artists`");
 $stmt->execute();
 $artists = $stmt->fetchAll();
 
 ?>
 </head>
 
-<body class="d-flex flex-column">
-    <?php include "assets/nav.php" ?>
-    <div class="container-fluid d-flex flex-column flex-grow-1 w-100 m-0 p-0 responsive-height">
-        <div class="row flex-grow-1 w-100 m-0" style="background-color:#a1a1c7;">
-            <!-- Left Sidebar -->
-            <div class="col-2 d-md-flex d-none text-dark text-center flex-column justify-content-around p-0">
-                <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1">
-                    <div class="nav-link text-dark h5" onclick="goBack()">Color and Style</div>
-                </div>
-                <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 border-top border-bottom ">
-                    <div class="nav-link text-dark h5"  style="font-weight: bold;">Artist and Album</div>
-                </div>
-                <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1">
-                    <div class="nav-link text-dark h5 " onclick="nextStep()">Engraving</div>
-                </div>
-            </div>
+<body class="d-flex flex-column" style=" background-color: #86878f; ">
+     <?php include "assets/nav.php" ?>
+     <!-- Aqui va el código de la página.
+     include: añade los archivos nav.php y footer.php a este código literalmente como si hiciera un copy/paste.-->
+     <div class="container-fluid d-flex flex-column flex-grow-1 w-100 m-0 p-0 responsive-height">
+          <div class="row flex-grow-1 w-100 m-0">
+               <!-- Left Sidebar -->
+               <div class="col-2 d-md-flex d-none bg-white text-dark text-center flex-column justify-content-around p-0">
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 bg-secondary">
+                         <div class="nav-link text-dark h5">Color and Style</div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 border-top border-bottom ">
+                         <div class="nav-link text-dark h5" onclick="nextStep()" style="font-weight: bold;">Artist and Album</div>
 
-            <!-- Main Section -->
-            <div class="col-md-3 col-12 order-3 order-md-2 text-dark text-center p-0 border-start" style="background-color:#8b8bae;">
-                <form class="d-flex flex-column justify-content-around align-items-center w-100" style="height:80%;">
-                    <!-- Artist Selection -->
-                    <div style="width:80%;">
-                        <label><b>Choose Artist:</b></label>
-                        <select id="artistSelect" class="form-select" size="6" aria-label="size 3 select example">
-                            <?php
-                            foreach ($artists as $artist) { ?>
-                                <option value="<?= htmlspecialchars($artist['ArtistID']); ?>"><?= htmlspecialchars($artist['ArtistName']); ?></option>
-                            <?php
-                            }
-                            ?>
-                        </select>
                     </div>
-                    <!-- Album Selection -->
-                    <div id="albumDiv" style="width:80%;">
-                        <label><b>Choose Album:</b></label>
-                        <select id="albumSelect" class="form-select" size="5 " aria-label="size 3 select example"></select>
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 bg-secondary">
+                         <div class="nav-link text-dark h5">Engraving</div>
                     </div>
-                    <!-- Prefill Inputs -->
-                    <input type="hidden" id="img" value="<?= $img ?>">
-                    <input type="hidden" id="engraving" value="<?= $engraving ?>">
-                    <input type="hidden" id="fontFamily" value="<?= $fontFamily ?>">
-                    <input type="hidden" id="fontSize" value="<?= $fontSize ?>">
-                    <input type="hidden" id="editId" value="<?= $editId ?>">
-                </form>
-                <div class="btn btn-secondary" onclick="goBack()">Back</div>
-                <div class="btn btn-primary" onclick="nextStep()">Next</div>
-            </div>
-            <div class="col-md-7 col-12 order-2 order-md-3 d-flex align-items-center justify-items-center" style="background-color:#b4bac1">
-                <div class="rotative-container" style="width:600px;height:300px">
-                    <div class="main-container">
-                        <!-- Cover image -->
-                        <div id="square" class="square" style="background:url(<?=$img?>);"></div>
-                        <div class="vinyl-container">
-                            <p class="disk-text" style="font-family: <?= $fontFamily ?>; font-size: <?= $fontSize ?>px;">
-                                <?= $engraving ?>
-                            </p>
-                            <div alt="Current Vinyl Design" id="vinylImage" class="circle-black <?= $color ?> <?= $texture ?>"></div>
-                            <div id="circle" class="circle" style="background:url(<?=$img?>);"></div>
-                        </div>
+               </div>
+
+               <!-- Main Section -->
+               <div class="col-md-3 col-12 order-3 order-md-2 bg-white text-dark text-center p-0 border-start">
+                    <form class="d-flex flex-column justify-content-around align-items-center w-100" style="height:80%;">
+                         <!-- Color Selection -->
+                         <div style=" width:80%;">
+                              <label><b>Choose Artist:</b></label>
+                              <select id="artistSelect" class="form-select" size="6" aria-label="size 3 select example">
+                                   <?php
+                                   foreach ($artists as $artist) { ?>
+                                        <option value="<?= htmlspecialchars($artist['ArtistID']); ?>"><?= htmlspecialchars($artist['ArtistName']); ?></option>
+                                   <?php
+                                   }
+                                   ?>
+
+                              </select>
+                         </div>
+                         <!-- <ul class="list-group d-flex flex-column justify-content-around" style="width: 80%;">
+                              <li class="list-group-item">
+                                   <input type="radio" name="color" id="pink" value="pink" class="color-option"> Sabrina Carpenter
+                              </li>
+                         </ul> -->
+
+                         <!-- Style Selection -->
+                         <div id="albumDiv" style="width:80%;">
+                              <label><b>Choose Album:</b></label>
+                              <select id="albumSelect" class="form-select" size="5 " aria-label="size 3 select example">
+                              </select>
+                         </div>
+                         <!-- <ul class="list-group d-flex flex-column justify-content-around" style="width: 80%;">
+                              <li class="list-group-item">
+                                   <input type="radio" name="style" id="marble" value="marble"> Marble
+                              </li>
+                              <li class="list-group-item">
+                                   <input type="radio" name="style" id="plain" value="plain" checked> Plain
+                              </li>
+                         </ul> -->
+                    </form>
+                    <div class="btn btn-primary" onclick="nextStep()">next</div>
+
+               </div>
+               <div class="col-md-7 col-12 order-2 order-md-3 d-flex align-items-center justify-items-center">
+                    <div class="rotative-container" style="width:600px;height:300px">
+                         <div class="main-container">
+                              <!-- Cover image -->
+                              <div id="square" class="square" style="background:url(./images/imgIcon.jpg);"></div>
+                              <div class="vinyl-container">
+                                   <p class="disk-text">Engraving</p>
+                                   <div alt="Current Vinyl Design" id="vinylImage" class="circle-black <?= "bg-" . $color ?> <?= $texture ?>"></div>
+                                   <div id="circle" class="circle" style="background:url(./images/imgIcon.jpg);"></div>
+                              </div>
+
+                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php include "assets/footer.php" ?>
+               </div>
+          </div>
+     </div>
+     <?php include "assets/footer.php" ?>
 
     <script>
         var color = "<?= $color ?>";

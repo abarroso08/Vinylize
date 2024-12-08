@@ -1,31 +1,5 @@
 <?php include "assets/head.php" ?>
-<?php
-session_start(); // Start or resume the session
-
-// Check if user is logged in
-if (!isset($_SESSION['user_id'])) {
-    // If not logged in, redirect to the login page
-    header("Location: login.php?url=select-color.php");
-    exit; // Ensure no further code is executed
-}
-
-// Initialize an array of expected variables with default values
-$expectedVars = [
-    'color' => 'black',
-    'texture' => 'plain',
-    'img' => '/images/imgIcon.jpg',
-    'engraving' => 'Engraving',
-    'fontFamily' => 'Arial', // Default font family
-    'fontSize' => '16', // Default font size
-    'editId' => null // Default editId
-];
-
-// Loop through the expected variables
-foreach ($expectedVars as $key => $defaultValue) {
-    $$key = isset($_GET[$key]) ? filter_var($_GET[$key], FILTER_SANITIZE_STRING) : $defaultValue;
-}
-?>
-
+<link rel="stylesheet" href="css/rotative.css">
 </head>
 
 <body class="d-flex flex-column" style="background-color: #A1A8B1;"> <!-- Soft grey background -->
@@ -131,59 +105,42 @@ foreach ($expectedVars as $key => $defaultValue) {
      <?php include "assets/footer.php" ?>
     <?php $color = isset($color) && $color !== "" ? $color : "black"; ?>
      <script>
-     // JavaScript to handle dynamic class changes based on selected color
-     var color2 = "<?=$color?>"; // Default selected color
-     var texture = "<?=$texture?>"; // Default selected texture
-     var img = "<?=$img?>"; // PHP variable for `img`
-     var engraving = "<?=$engraving?>"; // PHP variable for `engraving`
-     var fontFamily = "<?=$fontFamily?>"; // PHP variable for `fontFamily`
-     var fontSize = "<?=$fontSize?>"; // PHP variable for `fontSize`
-     var editId = "<?=$editId?>"; // PHP variable for `editId`
+          // JavaScript to handle dynamic class changes based on selected color
+          var color = "";
+          var marble = "plain";
 
-     document.addEventListener("DOMContentLoaded", () => {
-          const colorOptions = document.querySelectorAll(".color-option");
-          const vinylImage = document.getElementById("vinylImage");
-          const marbleRadio = document.getElementById('marble');
-          const plainRadio = document.getElementById('plain');
+          document.addEventListener("DOMContentLoaded", () => {
+               const colorOptions = document.querySelectorAll(".color-option");
+               const vinylImage = document.getElementById("vinylImage");
+               const marbleRadio = document.getElementById('marble');
+               const plainRadio = document.getElementById('plain');
 
-          // Update color class when a color is selected
-          
-          colorOptions.forEach(option => {
-               option.addEventListener("change", () => {
-                   var color ="black";
-                   vinylImage.classList.remove(`${color}`);
-                    const selectedColor = option.value;
-                    console.log(color2);
-                    vinylImage.classList.remove(`${color2}`);
-                    vinylImage.classList.add(`bg-${selectedColor}`);
-                    color2 = `bg-${selectedColor}`; // Update the global variable
+               colorOptions.forEach(option => {
+                    option.addEventListener("change", () => {
+                         const selectedColor = option.value;
+                         vinylImage.classList.remove(`bg-${color}`);
+                         vinylImage.classList.add(`bg-${selectedColor}`);
+                         color = selectedColor;
+                    });
                });
+
+               function updateClass() {
+                    if (marbleRadio.checked) {
+                         vinylImage.classList.add('marble');
+                         marble = "marble";
+                    } else if (plainRadio.checked) {
+                         vinylImage.classList.remove('marble');
+                         marble = "plain";
+                    }
+               }
+
+               marbleRadio.addEventListener('change', updateClass);
+               plainRadio.addEventListener('change', updateClass);
           });
 
-          // Update texture based on radio selection
-          function updateTexture() {
-               if (marbleRadio.checked) {
-                    vinylImage.classList.add('marble');
-                    texture = "marble";
-               } else if (plainRadio.checked) {
-                    vinylImage.classList.remove('marble');
-                    texture = "plain";
-               }
+          function nextStep() {
+               window.location.href = `select-artist.php?color=${color}&texture=${marble}`;
           }
-
-          marbleRadio.addEventListener('change', updateTexture);
-          plainRadio.addEventListener('change', updateTexture);
-     });
-
-     function moveToEngraving() {
-          const nextUrl = `select-engraving.php?color=${encodeURIComponent(color2)}&texture=${encodeURIComponent(texture)}&img=${encodeURIComponent(img)}&engraving=${encodeURIComponent(engraving)}&fontFamily=${encodeURIComponent(fontFamily)}&fontSize=${encodeURIComponent(fontSize)}&editId=${encodeURIComponent(editId)}`;
-          window.location.href = nextUrl;
-     }
-
-     function nextStep() {
-          const nextUrl = `select-artist.php?color=${encodeURIComponent(color2)}&texture=${encodeURIComponent(texture)}&img=${encodeURIComponent(img)}&engraving=${encodeURIComponent(engraving)}&fontFamily=${encodeURIComponent(fontFamily)}&fontSize=${encodeURIComponent(fontSize)}&editId=${encodeURIComponent(editId)}`;
-          window.location.href = nextUrl;
-     }
      </script>
 
 </body>

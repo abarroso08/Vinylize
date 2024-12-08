@@ -112,43 +112,16 @@ try {
         }
     </style>
 </head>
-<body  style="background-color:#b4bac1; height:100vh; " class="d-flex flex-column justify-items-center">
-    <?php include "assets/nav.php"; ?>
 
-    <div class="container" style="background-color:#b4bac1;">
-        <!-- Vinyl Preview -->
-        <div class="rotative-container" style="width:600px;height:300px">
-        <div class="main-container">
-             <!-- Cover image -->
-              <div id="square" class="square" style="background:url(<?= htmlspecialchars($vinyl['imgURL']); ?>);"></div>
-             <div class="vinyl-container">
-                  <p class="disk-text" id="engraving" style="font-family: <?= htmlspecialchars($vinyl['fontFamily']); ?>; font-size: <?= htmlspecialchars($vinyl['fontSize']); ?>px;"><?= htmlspecialchars($vinyl['engraving']); ?></p>
-                  <div alt="Current Vinyl Design" id="vinylImage" class=" circle-black <?= htmlspecialchars($vinyl['color']); ?>  <?= htmlspecialchars($vinyl['texture']); ?>"></div>
-                  <div id="circle" class="circle" style="background:url(<?= htmlspecialchars($vinyl['imgURL']); ?>);"></div>
-             </div>
-        </div>
-        </div>
+<body class="d-flex flex-column min-vh-100">
+     <?php include "assets/nav.php" ?>
+     <!-- Aqui va el código de la página.
+     include: añade los archivos nav.php y footer.php a este código literalmente como si hiciera un copy/paste.-->
 
-        <!-- Vinyl Details -->
-        <div class="vinyl-details"  style="background-color:#b1b6c9;">
-            <h3>Engraving: <?= htmlspecialchars($vinyl['engraving']); ?></h3>
-            <p>Color: <?= htmlspecialchars($vinyl['color']); ?></p>
-            <p>Texture: <?= htmlspecialchars($vinyl['texture']); ?></p>
-            <?php
-// Calculate price based on texture
-$price = ($vinyl['texture'] === 'marble') ? 100 : 50;
-?>
-<p class="price">$<?= $price ?></p>
-            <a href="https://beta.vinylify.com/product/vinyl/" class="buy-button">Buy Now</a>
-        </div>
-    </div>
+     <h1 class="text-center font-pacifico text-4xl md:text-5xl text-indigo-600 mt-4">
+          Buy Your Vinyl
+     </h1>
 
-    <footer class="footer mt-auto py-3 bg-dark text-center">
-     <div class="fluid-container text-center">
-          <span class="text-secondary">Crafted and developed by </span><a class="text-primary" href="#">Silvia Díez, Javier
-               Fernández, Alejandro Barroso</a></br>
-          <span class="text-secondary">&copy; 2024 All rights reserved.</span>
-     </div>
-    </footer>
-</body>
-</html>
+
+     <!--Footer.php contiene el cierre de body y html, por eso no hace falta ponerlo aqui-->
+     <?php include "assets/footer.php" ?>

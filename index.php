@@ -1,4 +1,6 @@
-<?php include "assets/head.php" ?>
+<?php include "assets/head.php";
+session_start();
+?>
 <link rel="stylesheet" href="css/create.css">
 <link rel="stylesheet" href="css/rotative.css">
 

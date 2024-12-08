@@ -27,40 +27,21 @@ $edit = isset($_GET['editId']) ? intval($_GET['editId']) : null; // Check if `ed
                     <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1">
                          <div class="nav-link text-dark h5" onclick="goColor()">Color and Style</div>
                     </div>
-                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 border-top border-bottom " style="background-color:#a1a1c7;">
-                         <div class="nav-link text-dark h5" onclick="goBack()">Artist and Album</div>
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 border-top border-bottom bg-secondary">
+                         <div class="nav-link text-dark h5" >Artist and Album</div>
+
                     </div>
-                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1" style="background-color:#a1a1c7;">
+                    <div class="d-flex w-100 justify-content-center align-items-center flex-grow-1 ">
                          <div class="nav-link text-dark h5" style="font-weight: bold;">Engraving</div>
                     </div>
                </div>
 
                <!-- Main Section -->
-               <div class="col-md-3 col-12 order-3 order-md-2 text-dark text-center p-0 border-start" style="background-color:#8b8bae; ">
-                    <div class="d-flex flex-column justify-content-around align-items-center h-75">
-                         <h3>Type engraving:</h3>
-                         <input style="width: 80%;" type="text" id="textInput" class="form-control" maxlength="12" value="<?= $engraving ?>" placeholder="Enter up to 12 characters">
-                         
-                         <h3>Choose Font:</h3>
-<select id="fontFamily" class="form-select" style="width: 80%;">
-    <option value="Arial" <?= $fontFamily === 'Arial' ? 'selected' : '' ?>>Arial</option>
-    <option value="Courier New" <?= $fontFamily === 'Courier New' ? 'selected' : '' ?>>Courier New</option>
-    <option value="Comic Sans MS" <?= $fontFamily === 'Comic Sans MS' ? 'selected' : '' ?>>Comic Sans MS</option>
-    <option value="Impact" <?= $fontFamily === 'Impact' ? 'selected' : '' ?>>Impact</option>
-    <option value="Papyrus" <?= $fontFamily === 'Papyrus' ? 'selected' : '' ?>>Papyrus</option>
-    <option value="Times New Roman" <?= $fontFamily === 'Times New Roman' ? 'selected' : '' ?>>Times New Roman</option>
-    <option value="Arial Black" <?= $fontFamily === 'Arial Black' ? 'selected' : '' ?>>Arial Black</option>
-    <option value="Verdana" <?= $fontFamily === 'Verdana' ? 'selected' : '' ?>>Verdana</option>
-    <option value="Georgia" <?= $fontFamily === 'Georgia' ? 'selected' : '' ?>>Georgia</option>
-</select>
-
-
-                         <h3>Font Size:</h3>
-                         <input type="number" id="fontSize" class="form-control" style="width: 80%;" min="10" max="25" value="<?= $fontSize ?>">
-                    </div>
-                    <div>
-                         <button class="btn btn-secondary" onClick="goBack()">Back</button>
-                         <button class="btn btn-success" id="finishButton">Finish and Save</button>
+               <div class="col-md-3 col-12 order-3 order-md-2 bg-white text-dark text-center p-0 border-start">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-50">
+                    <h3>Type engraving:</h3>
+                    <input style="width: 80%;" type="text" id="textInput" class="form-control" maxlength="12" placeholder="Enter up to 12 characters">
+                    <div class="btn btn-success" onclick="nextStep()">Finish and Save</div>
                     </div>
                </div>
 
@@ -95,37 +76,9 @@ $edit = isset($_GET['editId']) ? intval($_GET['editId']) : null; // Check if `ed
         const fontFamilySelect = document.getElementById("fontFamily");
         const fontSizeInput = document.getElementById("fontSize");
 
-        textInput.addEventListener("input", () => {
-            engraving = textInput.value || engraving; // Keep the original value if not changed
-            displayText.textContent = engraving;
-        });
-
-        fontFamilySelect.addEventListener("change", () => {
-            fontFamily = fontFamilySelect.value || fontFamily; // Keep the original value if not changed
-            displayText.style.fontFamily = fontFamily;
-        });
-
-        fontSizeInput.addEventListener("input", () => {
-            fontSize = fontSizeInput.value || fontSize; // Keep the original value if not changed
-            displayText.style.fontSize = `${fontSize}px`;
-        });
-
-        document.getElementById("finishButton").addEventListener("click", () => {
-            const targetUrl = editId
-                ? `edit.php?id=${editId}&img=${encodeURIComponent(img)}&color=${encodeURIComponent(color)}&texture=${encodeURIComponent(texture)}&engraving=${encodeURIComponent(engraving)}&fontFamily=${encodeURIComponent(fontFamily)}&fontSize=${encodeURIComponent(fontSize)}`
-                : `upload.php?img=${encodeURIComponent(img)}&color=${encodeURIComponent(color)}&texture=${encodeURIComponent(texture)}&engraving=${encodeURIComponent(engraving)}&fontFamily=${encodeURIComponent(fontFamily)}&fontSize=${encodeURIComponent(fontSize)}`;
-            window.location.href = targetUrl;
-        });
-
-        window.goBack = () => {
-            const backUrl = `select-artist.php?img=${encodeURIComponent(img)}&color=${encodeURIComponent(color)}&texture=${encodeURIComponent(texture)}&engraving=${encodeURIComponent(engraving)}&fontFamily=${encodeURIComponent(fontFamily)}&fontSize=${encodeURIComponent(fontSize)}${editId ? `&editId=${editId}` : ''}`;
-            window.location.href = backUrl;
-        };
-        window.goColor = () => {
-            const backUrl = `select-color.php?img=${encodeURIComponent(img)}&color=${encodeURIComponent(color)}&texture=${encodeURIComponent(texture)}&engraving=${encodeURIComponent(engraving)}&fontFamily=${encodeURIComponent(fontFamily)}&fontSize=${encodeURIComponent(fontSize)}${editId ? `&editId=${editId}` : ''}`;
-            window.location.href = backUrl;
-        };
-    });
-    </script>
-</body>
-</html>
+               // Add an event listener to update the div as the user types
+               textInput.addEventListener("input", () => {
+                    displayText.textContent = textInput.value; // Update the div with input value
+               });
+          });
+     </script>
