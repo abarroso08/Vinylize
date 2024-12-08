@@ -11,7 +11,7 @@
           <header class="header container-fluid">
                <!-- Background Video -->
 
-               <video autoplay muted loop class="video-background w-100" style="height:80vh;object-fit:cover;">
+               <video autoplay muted loop class="video-background w-100" style="height:80vh;object-fit:cover;margin-bottom: 20px">
                     <source src="images/video_portada.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                </video>
@@ -30,16 +30,17 @@
                <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
                     <!-- Rotative vinyl -->
                     <div class="rotative-container" style="width:300px;height:150px">
-                         <div class="main-container">
-                              <!-- Cover image -->
-                              <img src="images/sabrina.jpg" class="square shadow-effect"></img>
-                              <div class="vinyl-container">
-                                   <p class="disk-text">Engraving</p>
-                                   <img src="images/vinyl-black.png" alt="Current Vinyl Design" class="vinyl-left purple">
-                                   <img src="images/sabrina.jpg" alt="" class="circle">
-                              </div>
-
-                         </div>
+                        <div class="main-container">
+                                  <!-- Cover image -->
+                                  <div id="square" class="square shadow-effect" style="background:url(images/sabrina.jpg);"></div>
+                                  <div class="vinyl-container">
+                                       <p class="disk-text" style="font-family:Verdana; font-size: 12px;">
+                                           Engraving
+                                       </p>
+                                       <div alt="Current Vinyl Design" id="vinylImage" class="circle-black black plain"></div>
+                                       <div id="circle" class="circle" style="background:url(images/sabrina.jpg);"></div>
+                                  </div>
+                             </div>
                     </div>
                     <!-- Example title -->
                     <h2 style="text-align: center;">Custom vinyl record</h2>
@@ -47,7 +48,6 @@
                     <p class="price" style="text-align: center;">$50</p>
                     <!-- Example description -->
                     <p style="text-align: center;">Custom made 12 inch Vinyl Record<br>
-                         Available in black, white and transparent<br>
                          30 minutes of music (15 min per side)<br>
                          Design your own cover &amp; labels<br>
                          <strong><i class="fa fa-fw"></i> Free &amp; insured worldwide shipping</strong>
@@ -62,27 +62,24 @@
                <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
                     <!-- Rotative vinyl -->
                     <div class="rotative-container" style="width:300px;height:150px">
-                         <div class="main-container">
-                              <!-- Cover image -->
-                              <img src="images/kanye-cover.jpg" class="square shadow-effect"></img>
-                              <div class="vinyl-container">
-                                   <!-- vinyl name -->
-                                   <p class="disk-text">Engraving</p>
-                                   <img src="images/half-vinyl.png" alt="Current Vinyl Design" class="vinyl-left gold-pink w-50">
-                                   <!-- Circle picture in disk -->
-                                   <img src="images/college.jpg" alt="" class="circle">
-                                   <img src="images/half-vinyl.png" alt="Current Vinyl Design" class="vinyl-right gold-pink w-50">
-                              </div>
-
-                         </div>
+                        <div class="main-container">
+                                  <!-- Cover image -->
+                                  <div id="square" class="square shadow-effect" style="background:url(images/ASTROWORLD.jpeg);"></div>
+                                  <div class="vinyl-container">
+                                       <p class="disk-text" style="font-family:impact; font-size: 12px;">
+                                           Engraving
+                                       </p>
+                                       <div alt="Current Vinyl Design" id="vinylImage" class="circle-black bg-brown marble"></div>
+                                       <div id="circle" class="circle" style="background:url(images/ASTROWORLD.jpeg);"></div>
+                                  </div>
+                             </div>
                     </div>
                     <!-- Example title -->
-                    <h2 style="text-align: center;">Custom vinyl record</h2>
+                    <h2 style="text-align: center;">Marble vinyl record</h2>
                     <!-- Example price -->
                     <p class="price" style="text-align: center;">$100</p>
                     <!-- Example description -->
                     <p style="text-align: center;">Custom made 14 inch Vinyl Record<br>
-                         Available in black, white, grey and transparent<br>
                          60 minutes of music (30 min per side)<br>
                          Design your own cover &amp; labels<br>
                          <strong><i class="fa fa-fw"></i> Free &amp; insured worldwide shipping</strong>
@@ -116,7 +113,7 @@
                </div>
 
                <!-- Creation Process -->
-               <div class="section creation-process">
+               <div class="section creation-process" style= "margin-bottom: 50px;">
                     <h2>Creation Process</h2>
                     <p>
                          Our process begins by partnering with trusted suppliers who provide us with all the essential materials

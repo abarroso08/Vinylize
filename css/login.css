@@ -166,11 +166,13 @@ i span {
   font-size: 15px;
   color: white;
   font-family: 'Open Sans', sans-serif;
+  margin-top:20px;
 }
 
 .signup a {
   color: #3498db;
   text-decoration: none;
+  margin-top:20px;
 }
 
 .signup a:hover {
